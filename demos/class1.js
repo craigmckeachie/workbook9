@@ -28,6 +28,10 @@ class Person {
   getIntroduction() {
     return `Hi my name is ${this.first} ${this.last}. You can contact me at: ${this.email}. `;
   }
+
+  logIntroduction() {
+    console.log(this.getIntroduction());
+  }
 }
 
 // let person3 = new Person();
@@ -43,3 +47,4 @@ console.log(person3.getIntroduction());
 let person4 = new Person("Jarel", "Wright", "idontwanttobewright@email.com");
 console.log(person4);
 console.log(person4.getIntroduction());
+person4.logIntroduction();
