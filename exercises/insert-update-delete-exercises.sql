@@ -1,3 +1,4 @@
+
 INSERT INTO `northwind`.`Suppliers`
 (
 `CompanyName`,
@@ -35,6 +36,14 @@ VALUES
 0,
 10,
 0);
+
+UPDATE northwind.products
+SET  unitprice = unitprice* .15 +35 
+WHERE productID = 79;
+
+DELETE FROM products
+WHERE productID = 79;
+
 
 select *
 from suppliers;
